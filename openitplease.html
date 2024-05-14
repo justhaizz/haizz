@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This may be the only way I can do it for you. Please answer the question below and I will tell you. Hope only you know the answer</title>
+</head>
+<body>
+
+<h2>What does the O in FLO mean?</h2>
+
+<input type="text" id="user-answer" placeholder="Type your answer here">
+
+<button onclick="checkAnswer()">Submit</button>
+
+<div id="video-container" style="display: none;">
+    <h3>Enjoy the video!</h3>
+    <!-- Embed your video here -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<script>
+    function checkAnswer() {
+        var userAnswer = document.getElementById("user-answer").value.toLowerCase();
+
+        if (userAnswer === "owl") {
+            document.getElementById("video-container").style.display = "block";
+        } else {
+            alert("Okay, maybe next time!");
+        }
+    }
+</script>
+
+</body>
+</html>
